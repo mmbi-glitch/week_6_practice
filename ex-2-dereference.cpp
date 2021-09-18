@@ -8,8 +8,6 @@ int main() {
   cout << "The value in a is " << a << endl;
   cout << "The address of a is " << &a << endl;
   cout << "The value at the address " << &a << " is " << *(&a) << endl << endl;
-  cout << "Now changed";
-  cout << "Changed again";
 }
 
 /*
