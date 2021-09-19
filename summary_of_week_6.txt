@@ -1,0 +1,26 @@
+Summary of passing parameters
+
+(1) call by value –
+    what we usually do in a C++ program.
+    Values are passed to the function.
+    These values can be changed but they do not change the corresponding values back in main
+    – see the first version of the swop function that does not work (the values back in main remain unchanged).
+
+(2) call by value with pointers –
+    if the parameters are pointers (see the second version of the swop function),
+    then the function can change values back in main.
+    We do not usually do this as working with pointers can get very messy.
+
+(3) call by reference –
+    C++ provides a call by reference system where ampersands are used to indicate any variable
+    that needs to be changed back in main – see the final version of the swop function.
+    This is easy to do (no pointers) and the program now works correctly.
+
+Final comment – if you want a function that changes values back in main,
+                use the call by reference system to avoid using pointers.
+                However, it is important to note that the call by reference system is actually making use of pointers
+                (but hiding them from us).
+
+Note: in this section “variables back in main” may refer to the variables
+      in the main program but may also refer to variables
+      in any other function that is calling the function of interest.
